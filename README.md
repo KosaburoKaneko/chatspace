@@ -4,8 +4,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|strings|null: false, index: true|
-|email|strings|null: false, unique: true|
+|name|string|null: false, index: true|
+|email|string|devise|
 
 ### Association
 - has_many :messages
@@ -16,8 +16,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|strings|null: false|
-|image|strings||
+|text|string||
+|image|string||
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
 
@@ -29,11 +29,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
+|name|string|null: false, index: true|
 
 ### Association
 - has_many :users, through: :group-users
 - has_many :group-users
+- has_many :messages
 
 ## group-usersテーブル
 
@@ -43,5 +44,5 @@
 |group_id|references|null: false, foreign_key: true|
 
 ### Association
-- has_many :users
-- has_many :groupes
+- belongs_to :users
+- belongs_to :groupes
