@@ -1,9 +1,14 @@
 %div.side_menu
   %div.side_menu_head
-    %div.user_name
-      Kosaburo
-    %span.new_message
-    %span.setting
+    %ul
+      %li.user_name
+        Kosaburo
+      %li.icon__setting
+        =link_to 'https://qiita.com/trend', class: "icon__setting", method: :get do
+          =fa_icon "cog"
+      %li.icon__new_message
+        =link_to 'https://qiita.com/trend', class: "icon__new_message", method: :get do
+          =fa_icon "edit"
   %div.side_menu_bottom
     %ul
       %li.group_name
@@ -23,19 +28,35 @@
   %div.main_head
     %div.group_name
       sampleグループ
-    %div.edit_button
-      edit
+    =link_to "Edit", root_path, class: "edit_button"
     %div.group_member
       member: kosaburo, masashi, kazuya, kenji
-  %ul
-    %li.user_name
-      kosaburo
-    %li.user_name
-      masashi
-    %li.user_name
-      kazuya
+  %div.chat_space
+    %ul
+      %li.user_name
+        kosaburo
+        %span.created_at
+          2016/10/02 06:27:07
+      %li.comment
+        kosaburo's comment
+      %li.user_name
+        masashi
+        %span.created_at
+          2016/10/02 06:27:07
+      %li.comment
+        masashi's comment
+      %li.user_name
+        kazuya
+        %span.created_at
+          2016/10/02 06:27:07
+      %li.comment
+        kazuya's comment
   %div.footer
-    %form{:action => "/", :method => "post"}
-      %input{:name => "title", :size => "40"}
-    %div.image_button
-    %div.send_button
+    %div.chat_form
+      %form{:action => "/", :method => "post"}
+        %input{:name => "message", :size => "40", :class => "chat_input", :placeholder => "Type a message"}
+          %div.image_upload
+            =link_to 'https://qiita.com/trend', class: "image_upload", method: :get do
+              =fa_icon "image"
+          %div.send_button
+            =link_to "Send", root_path, class: "send_button"
