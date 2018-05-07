@@ -1,0 +1,41 @@
+%div.side_menu
+  %div.side_menu_head
+    %div.user_name
+      Kosaburo
+    %span.new_message
+    %span.setting
+  %div.side_menu_bottom
+    %ul
+      %li.group_name
+        グループ名１
+        %p.latest_message
+          グループ１最新メッセージ
+      %li.group_name
+        グループ名２
+        %p.latest_message
+          グループ２最新メッセージ
+      %li.group_name
+        グループ名３
+        %p.latest_message
+          グループ３最新メッセージ
+
+%div.main
+  %div.main_head
+    %div.group_name
+      sampleグループ
+    %div.edit_button
+      edit
+    %div.group_member
+      member: kosaburo, masashi, kazuya, kenji
+  %ul
+    %li.user_name
+      kosaburo
+    %li.user_name
+      masashi
+    %li.user_name
+      kazuya
+  %div.footer
+    %form{:action => "/", :method => "post"}
+      %input{:name => "title", :size => "40"}
+    %div.image_button
+    %div.send_button
