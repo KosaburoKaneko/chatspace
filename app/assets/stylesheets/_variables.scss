@@ -6,6 +6,10 @@
 }
 
 $side_bar--width: 300px;
+$notification--height: 34px;
+$main_content__head--height: 100px;
+$main_content__footer--height: 90px;
+$main_content__chat_space--height: calc(100vh - (#{$notification--height} + #{$main_content__head--height} + #{$main_content__footer--height}));
 
 $text--light_color: #999999;
 $side_bar--text_color: #FFFFFF;

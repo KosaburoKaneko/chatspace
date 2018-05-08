@@ -1,30 +1,27 @@
-.main_content {
-  float: right;
-  &__chat_space {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 40px;
-    background-color: rgb(231, 231, 231);
-    height: calc(100vh - 189px);
-    overflow: scroll;
-    &__user_name:first-child {
-      margin-top: 0;
-    }
-    &__user_name {
-      font-size: 16px;
-      font-weight: bold;
-      color: $main_content__chat_space--text_color;
-      margin: 40px 0 10px;
-    }
-    &__created_at {
-      all: initial;
-      font-size: 12px;
-      color: $text--light_color;
-      margin-left: 10px;
-    }
-    &__comment {
-      font-size: 14px;
-      color: $main_content__chat_space--text_color;
-    }
+.main_content__chat_space {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 40px;
+  background-color: rgb(231, 231, 231);
+  height: $main_content__chat_space--height;
+  overflow: scroll;
+  &__user_name:first-child {
+    margin-top: 0;
+  }
+  &__user_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: $main_content__chat_space--text_color;
+    margin: 40px 0 10px;
+  }
+  &__created_at {
+    all: initial;
+    font-size: 12px;
+    color: $text--light_color;
+    margin-left: 10px;
+  }
+  &__comment {
+    font-size: 14px;
+    color: $main_content__chat_space--text_color;
   }
 }
