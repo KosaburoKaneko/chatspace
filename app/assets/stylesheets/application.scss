@@ -118,6 +118,9 @@
         border: none;
         padding-left: 10px;
         float: left;
+        &:focus {
+          outline: none;
+        }
       }
       &__image_upload {
         width: 80px;
