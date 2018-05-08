@@ -9,9 +9,9 @@
 
     &__chat_input {
       height: 50px;
-      width: calc(100% - 180px); // この「padding-left: 10px」と「__image_uploadのwidthとmarginとpadding」と「__send_buttonのwidth」を足すと180px
+      width: $main_content__footer__form__chat_input--width;
       border: none;
-      padding-left: 10px;
+      padding-left: $main_content__footer__form__chat_input--padding-left;
       float: left;
 
       &:focus {
@@ -20,19 +20,19 @@
     }
 
     &__image_upload {
-      width: 50px;
+      width: $main_content__footer__form__image_upload--width;
       text-align: center;
       line-height: 50px;
       float: left;
       color: $main_content__footer__form__image_upload--color;
       cursor: pointer;
-      margin-right: 15px;
-      padding-right: 10px;
+      margin-right: $main_content__footer__form__image_upload--margin-right;
+      padding-right: $main_content__footer__form__image_upload--padding-right;
       background-color: $main_content__footer__form__image_upload--background_color;
     }
     
     &__send_button {
-      width: 95px;
+      width: $main_content__footer__form__send_button--width;
       text-align: center;
       line-height: 50px;
       float: left;
