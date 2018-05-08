@@ -1,31 +1,31 @@
 @import "./reset";
 @import "font-awesome";
 
-.side_menu {
+.side_bar {
   width: 300px;
   height: 100vw;
   background-color: #2f3e51;
   float: left;
   box-sizing: border-box;
-  .side_menu_head {
+  .side_bar__head {
     width: 300px;
     height: 100px;
     background-color: #253141;
     padding: 60px 20px 0 20px;
     box-sizing: border-box;
-    .user_name {
+    .side_bar__head__user_name {
       color: #FFFFFF;
       font-size: 16px;
       font-weight: bold;
       float: left;
     }
-    .icon__setting {
+    .side_bar__head__icon_setting {
       float: right;
       color: #FFFFFF;
       font-size: 20px;
       line-height: 1px;
     }
-    .icon__new_message {
+    .side_bar__head__icon_new_message {
       padding-right: 5px;
       float: right;
       color: #FFFFFF;
@@ -33,17 +33,17 @@
       line-height: 1px;
     }
   }
-  .side_menu_bottom {
+  .side_bar__bottom {
     padding: 0 20px;
-    .group_name:first-child {
+    .side_bar__bottom ul li:first-child {
       margin-top: 20px;
     }
-    .group_name {
+    .side_bar_bottom__group_name {
       margin-bottom: 5px;
       color: #FFFFFF;
       font-size: 15px;
     }
-    .latest_message {
+    .side_bar_bottom__group_name__latest_message {
       margin-bottom: 40px;
       color: #FFFFFF;
       font-size: 11px;
@@ -55,80 +55,80 @@
   width: calc(100vw - 300px);
   height: calc(100vw - 90px);
   float: right;
-  .main_head {
+  .main__head {
     box-sizing: border-box;
     padding: 0 40px 0 40px;
     background-color: white;
     height: 99px;
     border-bottom: 1px solid #eeeeee;
-    .group_name {
+    .main__head__group_name {
       float: left;
       font-size: 20px;
       color: #333333;
       padding-top: 35px;
     }
-    .edit_button {
+    .main__head__edit_button {
       float: right;
       color: #38AEF0;
       text-decoration: none;
       margin: 28px 20px 0 20px;
       line-height: 40px;
     }
-    .group_member {
+    .main__head__group_member {
       font-size: 12px;
       color: #999999;
       clear: both;
     }
   }
-  .chat_space {
+  .main__chat_space {
     box-sizing: border-box;
     margin: 0;
     padding: 40px 40px 0 40px;
     background-color: rgb(231, 231, 231);
     height: calc(100vw - 189px);
-    .user_name:first-child {
+    .main__chat_space__user_name:first-child {
       margin-top: 0;
     }
-    .user_name {
+    .main__chat_space__user_name {
       font-size: 16px;
       font-weight: bold;
       color: #434A54;
       margin: 40px 0 10px 0;
     }
-    .created_at {
+    .main__chat_space__created_at {
       all: initial;
       font-size: 12px;
       color: #999999;
       margin-left: 10px;
     }
-    .comment {
+    .main__chat_space__comment {
       font-size: 14px;
       color: #434A54;
     }
   }
-  .footer {
+  .main__footer {
     height: 90px;
     background-color: #AAAAAA;
     box-sizing: border-box;
     padding: 20px 40px;
-    .chat_form {
+    .main__footer__form {
       height: 50px;
       background-color: #FFFFFF;
-      .chat_input {
+      .main__footer__form__chat_input {
         height: 50px;
         width: calc(100vw - 550px);
         border: none;
         padding-left: 10px;
         float: left;
       }
-      .image_upload {
+      .main__footer__form__image_upload {
         width: 80px;
         text-align: center;
         line-height: 50px;
         float: left;
         color: #333333;
       }
-      .send_button {
+      .main__footer__form__send_button {
         width: 80px;
         text-align: center;
         line-height: 50px;

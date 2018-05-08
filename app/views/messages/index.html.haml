@@ -1,62 +1,62 @@
-%div.side_menu
-  %div.side_menu_head
+%div.side_bar
+  %div.side_bar__head
     %ul
-      %li.user_name
+      %li.side_bar__head__user_name
         Kosaburo
-      %li.icon__setting
-        =link_to 'https://qiita.com/trend', class: "icon__setting", method: :get do
+      %li.side_bar__head__icon_setting
+        =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_setting", method: :get do
           =fa_icon "cog"
-      %li.icon__new_message
-        =link_to 'https://qiita.com/trend', class: "icon__new_message", method: :get do
+      %li.side_bar__head__icon_new_message
+        =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_new_message", method: :get do
           =fa_icon "edit"
-  %div.side_menu_bottom
+  %div.side_bar__bottom
     %ul
-      %li.group_name
+      %li.side_bar_bottom__group_name
         グループ名１
-        %p.latest_message
+        %p.side_bar_bottom__group_name__latest_message
           グループ１最新メッセージ
-      %li.group_name
+      %li.side_bar_bottom__group_name
         グループ名２
-        %p.latest_message
+        %p.side_bar_bottom__group_name__latest_message
           グループ２最新メッセージ
-      %li.group_name
+      %li.side_bar_bottom__group_name
         グループ名３
-        %p.latest_message
+        %p.side_bar_bottom__group_name__latest_message
           グループ３最新メッセージ
 
 %div.main
-  %div.main_head
-    %div.group_name
+  %div.main__head
+    %div.main__head__group_name
       sampleグループ
-    =link_to "Edit", root_path, class: "edit_button"
-    %div.group_member
+    =link_to "Edit", root_path, class: "main__head__edit_button"
+    %div.main__head__group_member
       member: kosaburo, masashi, kazuya, kenji
-  %div.chat_space
+  %div.main__chat_space
     %ul
-      %li.user_name
+      %li.main__chat_space__user_name
         kosaburo
-        %span.created_at
+        %span.main__chat_space__created_at
           2016/10/02 06:27:07
-      %li.comment
+      %li.main__chat_space__comment
         kosaburo's comment
-      %li.user_name
+      %li.main__chat_space__user_name
         masashi
-        %span.created_at
+        %span.main__chat_space__created_at
           2016/10/02 06:27:07
-      %li.comment
+      %li.main__chat_space__comment
         masashi's comment
-      %li.user_name
+      %li.main__chat_space__user_name
         kazuya
-        %span.created_at
+        %span.main__chat_space__created_at
           2016/10/02 06:27:07
-      %li.comment
+      %li.main__chat_space__comment
         kazuya's comment
-  %div.footer
-    %div.chat_form
+  %div.main__footer
+    %div.main__footer__form
       %form{:action => "/", :method => "post"}
-        %input{:name => "message", :size => "40", :class => "chat_input", :placeholder => "Type a message"}
-          %div.image_upload
-            =link_to 'https://qiita.com/trend', class: "image_upload", method: :get do
+        %input{:name => "message", :size => "40", :class => "main__footer__form__chat_input", :placeholder => "Type a message"}
+          %div.main__footer__form__image_upload
+            =link_to 'https://qiita.com/trend', class: "main__footer__form__image_upload", method: :get do
               =fa_icon "image"
-          %div.send_button
-            =link_to "Send", root_path, class: "send_button"
+          %div.main__footer__form__send_button
+            =link_to "Send", root_path, class: "main__footer__form__send_button"
