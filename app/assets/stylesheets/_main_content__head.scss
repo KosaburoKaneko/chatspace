@@ -1,27 +1,27 @@
 .main_content__head {
   box-sizing: border-box;
   padding: 0 40px;
-  background-color: #FFFFFF;
+  background-color: $main_content__head--background_color;
   height: $main_content__head--height;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $main_content__head--border_color;
 
   &__group_name {
     float: left;
     font-size: 20px;
-    color: #333333;
+    color: $main_content__head__group_name--color;
     padding-top: 35px;
   }
 
   &__edit_button {
     float: right;
-    color: #38AEF0;
+    color: $primary;
     text-decoration: none;
     margin: 28px 0 0;
     padding: 0 20px;
     line-height: 38px; // 設計値40px - ( border 1px * 2 )
-    border: 1px solid #38AEF0;
+    border: 1px solid $main_content__head__edit_button--color;
   }
-  
+
   &__group_member {
     font-size: 12px;
     color: $text--light_color;

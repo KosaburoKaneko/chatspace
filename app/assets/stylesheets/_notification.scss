@@ -1,6 +1,6 @@
 .notification {
-  color: white;
-  background-color: #38AEF0;
+  color: $notification--text__color;
+  background-color: $primary;
   text-align: center;
   padding: 5px 0;
   height: $notification--height;

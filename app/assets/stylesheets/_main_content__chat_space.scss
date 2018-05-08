@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 40px;
-  background-color: rgb(231, 231, 231);
+  background-color: $main_content__chat_space--backgroung_color;
   height: $main_content__chat_space--height;
   overflow: scroll;
 
@@ -23,7 +23,7 @@
     color: $text--light_color;
     margin-left: 10px;
   }
-  
+
   &__comment {
     font-size: 14px;
     color: $main_content__chat_space--text_color;
