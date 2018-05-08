@@ -4,32 +4,39 @@
   background-color: #2f3e51;
   float: left;
   box-sizing: border-box;
+
   &__head {
     height: 100px;
     background-color: #253141;
     padding: 60px 20px 0;
     box-sizing: border-box;
+
     &__user_name {
       color: $side_bar--text_color;
       font-size: 16px;
       font-weight: bold;
       float: left;
     }
+
     &__icon_setting {
       @include sideBarIconSetting();
     }
+
     &__icon_new_message {
       padding-right: 5px;
       @include sideBarIconSetting();
     }
   }
+
   &__bottom {
     padding: 0 20px;
+
     &__group_name {
       margin: 20px 0 5px;
       color: $side_bar--text_color;
       font-size: 15px;
     }
+    
     &__latest_message {
       margin-bottom: 40px;
       color: $side_bar--text_color;
