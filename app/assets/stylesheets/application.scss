@@ -35,11 +35,11 @@
   }
   .side_bar__bottom {
     padding: 0 20px;
-    .side_bar__bottom ul li:first-child {
+    .side_bar__bottom ul li :first-child {
       margin-top: 20px;
     }
     .side_bar_bottom__group_name {
-      margin-bottom: 5px;
+      margin: 20px 0 5px 0;
       color: #FFFFFF;
       font-size: 15px;
     }
