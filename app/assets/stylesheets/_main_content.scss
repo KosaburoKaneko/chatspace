@@ -1,0 +1,94 @@
+.main_content {
+  float: right;
+  &__head {
+    box-sizing: border-box;
+    padding: 0 40px;
+    background-color: white;
+    height: 100px;
+    border-bottom: 1px solid #eeeeee;
+    &__group_name {
+      float: left;
+      font-size: 20px;
+      color: #333333;
+      padding-top: 35px;
+    }
+    &__edit_button {
+      float: right;
+      color: #38AEF0;
+      text-decoration: none;
+      margin: 28px 20px 0;
+      line-height: 40px;
+    }
+    &__group_member {
+      font-size: 12px;
+      color: #999999;
+      clear: both;
+    }
+  }
+  &__chat_space {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 40px;
+    background-color: rgb(231, 231, 231);
+    height: calc(100vh - 189px);
+    overflow: scroll;
+    &__user_name:first-child {
+      margin-top: 0;
+    }
+    &__user_name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+      margin: 40px 0 10px;
+    }
+    &__created_at {
+      all: initial;
+      font-size: 12px;
+      color: #999999;
+      margin-left: 10px;
+    }
+    &__comment {
+      font-size: 14px;
+      color: #434A54;
+    }
+  }
+  &__footer {
+    height: 90px;
+    background-color: #AAAAAA;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    &__form {
+      height: 50px;
+      background-color: #FFFFFF;
+      &__chat_input {
+        height: 50px;
+        width: calc(100vw - 550px);
+        border: none;
+        padding-left: 10px;
+        float: left;
+        &:focus {
+          outline: none; // 入力時の青線を消去
+        }
+      }
+      &__image_upload {
+        width: 80px;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+        color: #333333;
+        cursor: pointer;
+      }
+      &__send_button {
+        width: 80px;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+        background-color: #38AEF0;
+        color: #FFFFFF;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+} 
