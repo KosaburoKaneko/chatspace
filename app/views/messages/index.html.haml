@@ -57,12 +57,12 @@
   %div.main__footer
     %div.main__footer__form
       = form_for @message do |f|
-        = f.text_field :message, class: 'main__footer__form__chat_input', placeholder: "Type a message"
+        = f.text_field :message, class: "main__footer__form__chat_input", placeholder: "Type a message"
         %div.main__footer__form__image_upload
           = f.label :image do
             = fa_icon "image"
             = f.file_field :image, style: "display: none;"
-        = f.submit "Send"
+        = f.submit "Send", class: "main__footer__form__send_button"
 
         -# %form{:action => "/", :method => "post"}
         -# %input{:name => "message", :size => "40", :class => "main__footer__form__chat_input", :placeholder => "Type a message"}
