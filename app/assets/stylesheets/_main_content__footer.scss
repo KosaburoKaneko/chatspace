@@ -5,10 +5,9 @@
   padding: 20px 40px;
   &__form {
     height: 50px;
-    background-color: #FFFFFF;
     &__chat_input {
       height: 50px;
-      width: calc(100vw - 550px);
+      width: calc(100% - 180px); // この「padding-left: 10px」と「__image_uploadのwidthとmarginとpadding」と「__send_buttonのwidth」を足すと180px
       border: none;
       padding-left: 10px;
       float: left;
@@ -24,6 +23,8 @@
       color: #333333;
       cursor: pointer;
       margin-right: 15px;
+      padding-right: 10px;
+      background-color: #FFFFFF;
     }
     &__send_button {
       width: 95px;
