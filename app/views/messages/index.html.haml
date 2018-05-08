@@ -1,67 +1,8 @@
 %div.side_bar
-  %div.side_bar__head
-    %ul
-      %li.side_bar__head__user_name
-        Kosaburo
-      %li.side_bar__head__icon_setting
-        =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_setting", method: :get do
-          =fa_icon "cog"
-      %li.side_bar__head__icon_new_message
-        =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_new_message", method: :get do
-          =fa_icon "edit"
-  %div.side_bar__bottom
-    %div.side_bar__bottom__group_name
-      グループ名１
-    %div.side_bar__bottom__latest_message
-      グループ１最新メッセージ
-    %div.side_bar__bottom__group_name
-      グループ名２
-    %div.side_bar__bottom__latest_message
-      グループ２最新メッセージ
-    %div.side_bar__bottom__group_name
-      グループ名３
-    %div.side_bar__bottom__latest_message
-      グループ３最新メッセージ
+  = render 'shared/side_bar__head'
+  = render 'shared/side_bar__bottom'
 
 %div.main_content
-  %div.main_content__head
-    %div.main_content__head__group_name
-      sampleグループ
-    =link_to "Edit", root_path, class: "main_content__head__edit_button"
-    %div.main_content__head__group_member
-      member: kosaburo, masashi, kazuya, kenji
-  %div.main_content__chat_space
-    %div.main_content__chat_space__user_name
-      kosaburo
-      %span.main_content__chat_space__created_at
-        2016/10/02 06:27:07
-    %div.main_content__chat_space__comment
-      kosaburo's comment
-    %div.main_content__chat_space__user_name
-      masashi
-      %span.main_content__chat_space__created_at
-        2016/10/02 06:27:07
-    %div.main_content__chat_space__comment
-      masashi's comment
-    %div.main_content__chat_space__user_name
-      kazuya
-      %span.main_content__chat_space__created_at
-        2016/10/02 06:27:07
-    %div.main_content__chat_space__comment
-      kazuya's comment
-  %div.main_content__footer
-    %div.main_content__footer__form
-      = form_for @message do |f|
-        = f.text_field :message, class: "main_content__footer__form__chat_input", placeholder: "Type a message"
-        = f.label :image, class: "main_content__footer__form__image_upload" do
-          = fa_icon "image lg"
-          = f.file_field :image, style: "display: none;"
-        = f.submit "Send", class: "main_content__footer__form__send_button"
-
-        -# %form{:action => "/", :method => "post"}
-        -# %input{:name => "message", :size => "40", :class => "main__footer__form__chat_input", :placeholder => "Type a message"}
-        -#   %div.main__footer__form__image_upload
-        -#     =link_to 'https://qiita.com/trend', class: "main__footer__form__image_upload", method: :get do
-        -#       =fa_icon "image"
-        -#   %div.main__footer__form__send_button
-        -#     =link_to "Send", root_path, class: "main__footer__form__send_button"
+  = render 'shared/main_content__head'
+  = render 'shared/main_content__chat_space'
+  = render 'shared/main_content__footer'

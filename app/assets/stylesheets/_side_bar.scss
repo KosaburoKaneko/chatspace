@@ -1,14 +1,5 @@
-$sideBarWidth: 300px;
-
-@mixin sideBarIconSetting() {
-  float: right;
-  color: #FFFFFF;
-  font-size: 20px;
-  line-height: 1px;
-}
-
 .side_bar {
-  width: $sideBarWidth;
+  width: $side_bar--width;
   height: 100vh;
   background-color: #2f3e51;
   float: left;
@@ -19,7 +10,7 @@ $sideBarWidth: 300px;
     padding: 60px 20px 0;
     box-sizing: border-box;
     &__user_name {
-      color: #FFFFFF;
+      color: $side_bar--text_color;
       font-size: 16px;
       font-weight: bold;
       float: left;
@@ -36,12 +27,12 @@ $sideBarWidth: 300px;
     padding: 0 20px;
     &__group_name {
       margin: 20px 0 5px;
-      color: #FFFFFF;
+      color: $side_bar--text_color;
       font-size: 15px;
     }
     &__latest_message {
       margin-bottom: 40px;
-      color: #FFFFFF;
+      color: $side_bar--text_color;
       font-size: 11px;
     }
   }
