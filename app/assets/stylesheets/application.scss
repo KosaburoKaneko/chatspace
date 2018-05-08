@@ -3,7 +3,7 @@
 
 .side_bar {
   width: 300px;
-  height: 100vw;
+  height: 100vh;
   background-color: #2f3e51;
   float: left;
   box-sizing: border-box;
@@ -50,7 +50,7 @@
 
 .main {
   width: calc(100vw - 300px);
-  height: calc(100vw - 90px);
+  height: calc(100vh - 90px);
   float: right;
   &__head {
     box-sizing: border-box;
@@ -80,9 +80,10 @@
   &__chat_space {
     box-sizing: border-box;
     margin: 0;
-    padding: 40px 40px 0 40px;
+    padding: 40px;
     background-color: rgb(231, 231, 231);
-    height: calc(100vw - 189px);
+    height: calc(100vh - 189px);
+    overflow: scroll;
     &__user_name:first-child {
       margin-top: 0;
     }
