@@ -8,10 +8,9 @@
 $side_bar--width: 300px;
 
 // main_content__chat_spaceの高さを出すために他要素の高さを取得
-$notification--height: 34px;
 $main_content__head--height: 100px;
 $main_content__footer--height: 90px;
-$main_content__chat_space--height: calc(100vh - (#{$notification--height} + #{$main_content__head--height} + #{$main_content__footer--height}));
+$main_content__chat_space--height: calc(100vh - (#{$main_content__head--height} + #{$main_content__footer--height}));
 
 // main_content__footer__formを横並べにするために横幅取得
 $main_content__footer__form__chat_input--padding-left: 10px;
