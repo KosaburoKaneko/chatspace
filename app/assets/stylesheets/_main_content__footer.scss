@@ -1,6 +1,6 @@
 .main_content__footer {
   height: $main_content__footer--height;
-  background-color: $main_content__footer--background_color;
+  background-color: #AAAAAA;
   box-sizing: border-box;
   padding: 20px 40px;
 
@@ -24,11 +24,11 @@
       text-align: center;
       line-height: 50px;
       float: left;
-      color: $main_content__footer__form__image_upload--color;
+      color: $text--dark_color;
       cursor: pointer;
       margin-right: $main_content__footer__form__image_upload--margin-right;
       padding-right: $main_content__footer__form__image_upload--padding-right;
-      background-color: $main_content__footer__form__image_upload--background_color;
+      background-color: $background--main_color;
     }
     
     &__send_button {
@@ -37,7 +37,7 @@
       line-height: 50px;
       float: left;
       background-color: $primary;
-      color: $main_content__footer__form__send_button--color;
+      color: $text--main_color;
       text-decoration: none;
       border: none;
       cursor: pointer;

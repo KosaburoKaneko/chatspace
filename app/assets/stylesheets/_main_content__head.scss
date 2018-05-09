@@ -1,14 +1,14 @@
 .main_content__head {
   box-sizing: border-box;
   padding: 0 40px;
-  background-color: $main_content__head--background_color;
+  background-color: $background--main_color;
   height: $main_content__head--height;
-  border-bottom: 1px solid $main_content__head--border_color;
+  border-bottom: 1px solid #eeeeee;
 
   &__group_name {
     float: left;
     font-size: 20px;
-    color: $main_content__head__group_name--color;
+    color: $text--dark_color;
     padding-top: 35px;
   }
 

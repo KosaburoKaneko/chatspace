@@ -23,19 +23,8 @@ $main_content__footer__form__send_button--width: 95px;
 $main_content__footer__form__chat_input--width: calc(100% - (#{$main_content__footer__form__chat_input--padding-left} + #{$main_content__footer__form__image_upload--width} + #{$main_content__footer__form__image_upload--margin-right} + #{$main_content__footer__form__image_upload--padding-right} + #{$main_content__footer__form__send_button--width}));
 
 $primary: #38AEF0;
+$text--main_color: #FFFFFF;
 $text--light_color: #999999;
-$notification--text__color: #FFFFFF;
-$notification--background__color: red;
-$side_bar--text_color: #FFFFFF;
-$side_bar--background_color: #2f3e51;
-$side_bar__head--background_color: #253141;
-$main_content__head--background_color: #FFFFFF;
-$main_content__head--border_color: #eeeeee;
-$main_content__head__group_name--color: #333333;
-$main_content__chat_space--text_color: #434A54;
-$main_content__chat_space--backgroung_color: rgb(231, 231, 231);
-$main_content__footer--background_color: #AAAAAA;
-$main_content__footer__form__image_upload--color: #333333;
-$main_content__footer__form__image_upload--background_color: #FFFFFF;
-$main_content__footer__form__send_button--color: #FFFFFF;
-$main_content__footer__form__send_button--background_color: #38AEF0;
+$text--dark_color: #333333;
+$background--main_color: #FFFFFF;
+$chat_space__main_color: #434A54

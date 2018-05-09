@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 40px;
-  background-color: $main_content__chat_space--backgroung_color;
+  background-color: rgb(231, 231, 231);
   height: $main_content__chat_space--height;
   overflow: scroll;
 
@@ -13,7 +13,7 @@
   &__user_name {
     font-size: 16px;
     font-weight: bold;
-    color: $main_content__chat_space--text_color;
+    color: $chat_space__main_color;
     margin: 40px 0 10px;
   }
 
@@ -26,6 +26,6 @@
 
   &__comment {
     font-size: 14px;
-    color: $main_content__chat_space--text_color;
+    color: $chat_space__main_color;
   }
 }
