@@ -19,12 +19,12 @@
     }
 
     &__icon_setting {
-      @include sideBarIconSetting();
+      @include side_bar_icon_setting();
     }
 
     &__icon_new_message {
       padding-right: 5px;
-      @include sideBarIconSetting();
+      @include side_bar_icon_setting();
     }
   }
 
