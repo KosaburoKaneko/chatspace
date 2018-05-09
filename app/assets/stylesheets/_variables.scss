@@ -1,0 +1,30 @@
+@mixin side_bar_icon_setting() {
+  float: right;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 1px;
+}
+
+$side_bar--width: 300px;
+
+// main_content__chat_spaceの高さを出すために他要素の高さを取得
+$notification--height: 34px;
+$main_content__head--height: 100px;
+$main_content__footer--height: 90px;
+$main_content__chat_space--height: calc(100vh - (#{$notification--height} + #{$main_content__head--height} + #{$main_content__footer--height}));
+
+// main_content__footer__formを横並べにするために横幅取得
+$main_content__footer__form__chat_input--padding-left: 10px;
+$main_content__footer__form__image_upload--width: 50px;
+$main_content__footer__form__image_upload--margin-right: 15px;
+$main_content__footer__form__image_upload--padding-right: 10px;
+$main_content__footer__form__send_button--width: 95px;
+// 100%からmain_content__footer__form内のtext_field以外の横幅合計を引く
+$main_content__footer__form__chat_input--width: calc(100% - (#{$main_content__footer__form__chat_input--padding-left} + #{$main_content__footer__form__image_upload--width} + #{$main_content__footer__form__image_upload--margin-right} + #{$main_content__footer__form__image_upload--padding-right} + #{$main_content__footer__form__send_button--width}));
+
+$primary: #38AEF0;
+$text--main_color: #FFFFFF;
+$text--light_color: #999999;
+$text--dark_color: #333333;
+$background--main_color: #FFFFFF;
+$chat_space__main_color: #434A54

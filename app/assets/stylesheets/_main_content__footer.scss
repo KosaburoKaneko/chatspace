@@ -1,0 +1,46 @@
+.main_content__footer {
+  height: $main_content__footer--height;
+  background-color: #AAAAAA;
+  box-sizing: border-box;
+  padding: 20px 40px;
+
+  &__form {
+    height: 50px;
+
+    &__chat_input {
+      height: 50px;
+      width: $main_content__footer__form__chat_input--width;
+      border: none;
+      padding-left: $main_content__footer__form__chat_input--padding-left;
+      float: left;
+
+      &:focus {
+        outline: none; // 入力時の青線を消去
+      }
+    }
+
+    &__image_upload {
+      width: $main_content__footer__form__image_upload--width;
+      text-align: center;
+      line-height: 50px;
+      float: left;
+      color: $text--dark_color;
+      cursor: pointer;
+      margin-right: $main_content__footer__form__image_upload--margin-right;
+      padding-right: $main_content__footer__form__image_upload--padding-right;
+      background-color: $background--main_color;
+    }
+    
+    &__send_button {
+      width: $main_content__footer__form__send_button--width;
+      text-align: center;
+      line-height: 50px;
+      float: left;
+      background-color: $primary;
+      color: $text--main_color;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

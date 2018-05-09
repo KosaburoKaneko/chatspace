@@ -1,0 +1,13 @@
+.flash {
+  color: $text--main_color;
+  text-align: center;
+  padding: 5px 0;
+  height: $notification--height;
+  box-sizing: border-box;
+  &__alert{
+    background-color: red;
+  }
+  &__notice {
+    background-color: $primary;
+  }
+}
