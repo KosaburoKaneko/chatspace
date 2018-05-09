@@ -1,5 +1,5 @@
 .main_content {
   width: calc(100vw - #{$side_bar--width});
-  height: calc(100vh - #{$notification--height});
+  height: 100vh;
   float: right;
 }
