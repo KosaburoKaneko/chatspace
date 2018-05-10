@@ -1,5 +1,9 @@
 class GroupsController < ApplicationController
 
+  def index
+    @message = "groups_controllerでsetした@message"
+  end
+
   def new
     @group = Group.new
     @group.users << current_user
