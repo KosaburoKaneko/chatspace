@@ -9,8 +9,8 @@
 
 ### Association
 - has_many :messages
-- has_many :groups, through: :group_user
 - has_many :group_users
+- has_many :groups, through: :group_user
 
 ## messagesテーブル
 
@@ -32,8 +32,8 @@
 |name|string|null: false, index: true|
 
 ### Association
-- has_many :users, through: :group_user
 - has_many :group_users
+- has_many :users, through: :group_user
 - has_many :messages
 
 ## group_usersテーブル
