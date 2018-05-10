@@ -1,7 +1,7 @@
 .main_content__footer
   .main_content__footer__form
-    = form_for @message do |f|
-      = f.text_field :message, class: "main_content__footer__form__chat_input", placeholder: "Type a message"
+    = form_for [@group, @message] do |f|
+      = f.text_field :text, class: "main_content__footer__form__chat_input", placeholder: "Type a message"
       = f.label :image, class: "main_content__footer__form__image_upload" do
         = fa_icon "image lg"
         = f.file_field :image, style: "display: none;"

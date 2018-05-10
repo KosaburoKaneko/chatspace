@@ -2,7 +2,8 @@ class GroupsController < ApplicationController
   before_action :set_group, only: [:edit, :update]
 
   def index
-    @message = "groups_controllerでsetした@message"
+    @message = Message.new
+    @group = current_user.groups
   end
 
   def new
@@ -20,7 +21,7 @@ class GroupsController < ApplicationController
   end
 
   def edit
-    # @group = current_user.groups.find(params[:id])
+    @group = current_user.groups.find(params[:id])
   end
 
   def update
@@ -39,6 +40,5 @@ class GroupsController < ApplicationController
 
   def set_group
     @group = Group.find(params[:id])
-    binding.pry
   end
 end
