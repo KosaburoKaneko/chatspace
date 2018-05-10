@@ -1,6 +1,9 @@
 .main_content__head
   .main_content__head__group_name
-    sampleグループ
-  =link_to "Edit", root_path, class: "main_content__head__edit_button"
-  .main_content__head__group_member
-    member: kosaburo, masashi, kazuya, kenji
+    = @group.name
+  =link_to "Edit", edit_group_path(@group), class: "main_content__head__edit_button"
+  - @group.users.each do |user|
+    .main_content__head__group_member
+      Member: 
+      = user.name
+      ,
