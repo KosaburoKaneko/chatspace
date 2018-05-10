@@ -30,6 +30,9 @@
 
   &__bottom {
     padding: 0 20px;
+    & a {
+      text-decoration: none;
+    }
 
     &__group_name {
       margin: 20px 0 5px;
