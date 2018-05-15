@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
 
+  def index
+    @users = User.where('name LIKE(?) and id != ?', "%#{params[:keyword]}%", current_user)
+    render json: @users
+  end
+
   def edit
   end
 
@@ -14,6 +19,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :user)
+    params.require(:user).permit(:name, :email)
   end
 end
