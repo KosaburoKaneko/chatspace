@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function() {
+$(document).on("turbolinks:load", function() {
   $(function() {
     function removeResult() {
       $('#user-search-result').children().remove();
