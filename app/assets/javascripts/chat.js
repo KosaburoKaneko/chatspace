@@ -1,4 +1,4 @@
-$(function() {
+$(document).on("turbolinks:load", function() {
   function buildHTML(message) {
     var img = "";
     if (message.image) {
@@ -9,7 +9,7 @@ $(function() {
     posted_time = posted_time.replace('.000Z', ''); // '.000Z' を削除 
     posted_time = posted_time.replace(/-/g, '/'); // 全ての '-' を '/' で置換 
     posted_time = posted_time.replace(/\+.*/g, ' '); // 全ての '-' を '/' で置換
-    var html = `<div class="main_content__chat_space__user_name">
+    var html = `<div class="main_content__chat_space__user_name" data-message-id="${message.id}">
                   ${message.name}
                   <span class="main_content__chat_space__created_at">
                     ${posted_time}
@@ -21,6 +21,29 @@ $(function() {
                 </div>`
     return html
   }
+
+  var interval = setInterval(function() {
+    var id = $('.main_content__chat_space__user_name').last().data('messageId');
+
+    if (window.location.pathname.match(/\/groups\/\d+\/messages/)) {
+      $.ajax({
+        url: location.pathname,
+        data: { id: id },
+        dataType: "json"
+      })
+      .done(function(json) {
+        json.new_message.forEach(function(message) {
+          var html = buildHTML(message);
+          $('.main_content__chat_space').append(html);
+          $('.main_content__chat_space').animate({ scrollTop: $('.main_content__chat_space')[0].scrollHeight }, 450);
+        });
+      })
+      .fail(function(json) {
+        alert('自動更新に失敗しました');
+      });
+    } else {
+      clearInterval(interval);
+    }} , 1000 );
 
   $('#new_message').on('submit', function(e) {
     e.preventDefault();

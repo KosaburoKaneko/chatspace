@@ -1,9 +1,9 @@
 .main_content__chat_space
   - @messages.each do |message|
-    .main_content__chat_space__user_name
+    .main_content__chat_space__user_name{ "data-message-id": "#{message.id}"}
       = message.user.name
       %span.main_content__chat_space__created_at
-        = message.created_at
+        = message.created_at.to_s(:time_format)
     .main_content__chat_space__comment
       = message.text
       = image_tag message.image.url if message.image.present?
