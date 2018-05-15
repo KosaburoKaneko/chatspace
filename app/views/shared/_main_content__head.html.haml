@@ -2,8 +2,7 @@
   .main_content__head__group_name
     = @group.name
   =link_to "Edit", edit_group_path(@group), class: "main_content__head__edit_button"
-  - @group.users.each do |user|
-    .main_content__head__group_member
-      Member: 
-      = user.name
-      ,
+  .main_content__head__group_member
+    Member: 
+    - @group.users.each do |user|
+      = user.name + " "
