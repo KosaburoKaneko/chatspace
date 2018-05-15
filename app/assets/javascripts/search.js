@@ -32,11 +32,9 @@ document.addEventListener("turbolinks:load", function() {
         dataType: 'json'
       })
       .done(function(users) {
-        if ($("#user-search-field").val() === "") {
-          removeResult();
-        }
-        else {
-          removeResult();
+        removeResult();
+        
+        if (!($("#user-search-field").val() === "")) {
           appendUsers(users);
         }
       })
